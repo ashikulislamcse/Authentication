@@ -10,22 +10,22 @@ const Login = () => {
           type="email"
           name="email"
           placeholder="Enter your email"
-          className="p-2 border rounded-md"
+          className="p-2 border rounded-md focus:ring focus:ring-blue-300"
         />
         <input
           type="password"
           name="password"
           placeholder="Enter your password"
-          className="p-2 border rounded-md"
+          className="p-2 border rounded-md focus:ring focus:ring-blue-300"
         />
         <button
           type="submit"
-          className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 cursor-pointer"
+          className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 cursor-pointer disabled:bg-gray-400"
         >
           Login
         </button>
         <p className="text-sm">
-          Don't have an account?{" "}
+          Don't have an account?
           <Link to="/register" className="text-blue-500 hover:underline">
             Register here
           </Link>
